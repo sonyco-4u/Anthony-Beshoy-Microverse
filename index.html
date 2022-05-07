@@ -12,9 +12,34 @@
     <h1 id="title"> Title </h1>
     <p id="description"> Description </p>
     <form id="survey-form" >
-      <input id="name"  type="name" name="name"  required>Name <br>
-      <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com">Email<br>
-      <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="12+"> Number <br>
+      <label for="name" id="name-label">Name</label><input id="name"  type="name" name="name"  required placeholder="name">Name <br>
+      <label for="email" id="email-label">Email</label><input id="email" type="email" name="email" class="form" required placeholder="example@mail.com">Email<br>
+      <label for="number" id="number-label">Number</label><input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="12+"> Number <br>
+      <select id="dropdown" name="code-lang" class="form">
+        <option value="C">C (Programming Language)</option>
+        <option value="Python">Python</option>
+        <option value="C#">C#</option>
+        <option value="php">PHP</option>
+        <option value="Js">Java Script</option>
+        <option value="Go">Go (Programming Language)</option>
+        <option value="ruby">Ruby on rails</option>
+        <option value="C++">C++</option>
+        <option value="Java">Java</option>
+    </select>
+    <div id="button111-area">
+      <br>
+     <input type="radio" name="gender" value="freelancer"> Part-time job holder<br>
+     <input type="radio" name="gender" value="applier"> Looking for a job.<br>
+     <input type="radio"  name="gender" value="unemployed"> I am a student
+   </div>
+   <div id="button222-area"><br>
+           
+    <input type="checkbox" name="os222" value="linux"> Linux-OS<br>
+    <input type="checkbox" name="0s3333" value="mac">  Mac-OS<br>
+  </div>
+  <textarea name="user
+  -message" id="message" placeholder="write a message"></textarea>
+  <input id="submit" type="submit">submit
     </form>
 
     <script  src="js/index.js"></script>
